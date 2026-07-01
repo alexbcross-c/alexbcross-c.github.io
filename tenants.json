@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "asset-spot-prices",
+    "name": "Specialized Asset Spot Prices",
+    "rootDomain": "kidasitehub.com",
+    "domain": "kidasitehub.com",
+    "basePath": "/asset-spot-prices",
+    "productionUrl": "https://kidasitehub.com/asset-spot-prices/"
+  },
+  {
+    "slug": "simulation-meta-economy",
+    "name": "Simulation Game Meta Economy",
+    "rootDomain": "kidasitehub.com",
+    "domain": "kidasitehub.com",
+    "basePath": "/simulation-meta-economy",
+    "productionUrl": "https://kidasitehub.com/simulation-meta-economy/"
+  },
+  {
+    "slug": "flight-hub-latency",
+    "name": "Flight Hub Latency Logs",
+    "rootDomain": "kidasitehub.com",
+    "domain": "kidasitehub.com",
+    "basePath": "/flight-hub-latency",
+    "productionUrl": "https://kidasitehub.com/flight-hub-latency/"
+  }
+]

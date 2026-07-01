@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Control Center</title>
+  <style>
+    :root { font-family: Inter, Arial, sans-serif; color: #17202a; background: #f3f5f6; }
+    body { margin: 0; min-height: 100vh; }
+    main { max-width: 1120px; margin: 0 auto; padding: 36px 20px; }
+    h1 { font-size: clamp(2rem, 5vw, 4.2rem); line-height: 1; margin: 0 0 12px; letter-spacing: 0; }
+    form, .panel { border: 1px solid #cbd5d1; background: #fff; border-radius: 8px; padding: 18px; margin-top: 18px; }
+    label { display: grid; gap: 8px; font-weight: 700; }
+    input { font: inherit; padding: 12px; border: 1px solid #aab7b0; border-radius: 6px; }
+    button { font: inherit; padding: 11px 14px; border: 0; border-radius: 6px; color: #fff; background: #1f3d3a; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; background: #fff; }
+    th, td { text-align: left; border-bottom: 1px solid #dce3df; padding: 12px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <main id="/admin-control-center">
+    <h1>Admin Control Center</h1>
+    <p>Cross-site traffic, heartbeat, uptime, and ad script confirmation telemetry.</p>
+    <form id="lock">
+      <label>Access token <input id="token" type="password" autocomplete="current-password"></label>
+      <p><button type="submit">Unlock</button></p>
+    </form>
+    <section id="dashboard" class="hidden">
+      <div class="panel"><strong>Built:</strong> 2026-07-01T23:27:39.574Z</div>
+      <div id="status" class="panel">Loading telemetry...</div>
+      <table>
+        <thead><tr><th>Site</th><th>Last status</th><th>Uptime</th><th>Ad confirmations</th></tr></thead>
+        <tbody id="sites"></tbody>
+      </table>
+    </section>
+  </main>
+  <script>
+    const ADMIN_AUTH_HASH = 'a64e81c4f530787e3364bf00cc76cfe3c6a0ace93fbf2ec45804bbe7ed699afc';
+    const encoder = new TextEncoder();
+    async function sha256(value) {
+      const digest = await crypto.subtle.digest('SHA-256', encoder.encode(value));
+      return Array.from(new Uint8Array(digest)).map((byte) => byte.toString(16).padStart(2, '0')).join('');
+    }
+    async function loadTelemetry(token) {
+      const response = await fetch('/.netlify/functions/admin-telemetry', { headers: { authorization: 'Bearer ' + token } });
+      if (!response.ok) throw new Error('Telemetry request failed: ' + response.status);
+      return response.json();
+    }
+    function renderTelemetry(data) {
+      document.getElementById('status').textContent = 'Last run ' + data.lastRun.completedAt + ' - ' + data.lastRun.status;
+      document.getElementById('sites').innerHTML = data.sites.map((site) => '<tr><td>' + site.name + '</td><td>' + site.status + '</td><td>' + site.uptimeSeconds + 's</td><td>' + site.adConfirmations.join(', ') + '</td></tr>').join('');
+    }
+    document.getElementById('lock').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const token = document.getElementById('token').value;
+      if (await sha256(token) !== ADMIN_AUTH_HASH) {
+        alert('Invalid token');
+        return;
+      }
+      sessionStorage.setItem('admin-token', token);
+      document.getElementById('lock').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+      renderTelemetry(await loadTelemetry(token));
+    });
+    const saved = sessionStorage.getItem('admin-token');
+    if (saved) {
+      document.getElementById('token').value = saved;
+      document.getElementById('lock').requestSubmit();
+    }
+  </script>
+</body>
+</html>

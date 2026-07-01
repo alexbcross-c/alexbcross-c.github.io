@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-07-01T23:27:39.574Z",
+  "uptimeSeconds": 0,
+  "lastRun": {
+    "status": "ok",
+    "completedAt": "2026-07-01T23:27:39.574Z",
+    "durationMs": 56,
+    "tenants": [
+      "asset-spot-prices",
+      "simulation-meta-economy",
+      "flight-hub-latency"
+    ]
+  },
+  "sites": [
+    {
+      "slug": "asset-spot-prices",
+      "name": "Specialized Asset Spot Prices",
+      "status": "ok",
+      "uptimeSeconds": 0,
+      "records": 3,
+      "topAnomaly": {
+        "tenant": "asset-spot-prices",
+        "metric": "spotIndex",
+        "label": "Spot Index",
+        "current": 128.4,
+        "previous": 128.4,
+        "unit": "idx",
+        "delta": 0,
+        "percentChange": 0,
+        "severity": "normal"
+      },
+      "trafficLogs": [],
+      "adConfirmations": [
+        "pending:PREBID_CONFIRMATION_CODE",
+        "pending:GAM_CONFIRMATION_CODE"
+      ]
+    },
+    {
+      "slug": "simulation-meta-economy",
+      "name": "Simulation Game Meta Economy",
+      "status": "ok",
+      "uptimeSeconds": 0,
+      "records": 3,
+      "topAnomaly": {
+        "tenant": "simulation-meta-economy",
+        "metric": "currencyVelocity",
+        "label": "Currency Velocity",
+        "current": 3.42,
+        "previous": 3.42,
+        "unit": "turns",
+        "delta": 0,
+        "percentChange": 0,
+        "severity": "normal"
+      },
+      "trafficLogs": [],
+      "adConfirmations": [
+        "pending:PREBID_CONFIRMATION_CODE",
+        "pending:GAM_CONFIRMATION_CODE"
+      ]
+    },
+    {
+      "slug": "flight-hub-latency",
+      "name": "Flight Hub Latency Logs",
+      "status": "ok",
+      "uptimeSeconds": 0,
+      "records": 3,
+      "topAnomaly": {
+        "tenant": "flight-hub-latency",
+        "metric": "hubLatencyMinutes",
+        "label": "Hub Latency",
+        "current": 48,
+        "previous": 48,
+        "unit": "min",
+        "delta": 0,
+        "percentChange": 0,
+        "severity": "normal"
+      },
+      "trafficLogs": [],
+      "adConfirmations": [
+        "pending:PREBID_CONFIRMATION_CODE",
+        "pending:GAM_CONFIRMATION_CODE"
+      ]
+    }
+  ]
+}
