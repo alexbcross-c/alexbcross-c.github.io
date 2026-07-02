@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-02T03:04:16.530Z",
-  "uptimeSeconds": 0,
+  "generatedAt": "2026-07-02T19:29:26.361Z",
+  "uptimeSeconds": 6,
   "lastRun": {
     "status": "ok",
-    "completedAt": "2026-07-02T03:04:16.530Z",
-    "durationMs": 48,
+    "completedAt": "2026-07-02T19:29:26.361Z",
+    "durationMs": 5899,
     "tenants": [
       "asset-spot-prices",
       "simulation-meta-economy",
@@ -16,7 +16,7 @@
       "slug": "asset-spot-prices",
       "name": "Specialized Asset Spot Prices",
       "status": "ok",
-      "uptimeSeconds": 0,
+      "uptimeSeconds": 6,
       "records": 3,
       "topAnomaly": {
         "tenant": "asset-spot-prices",
@@ -39,7 +39,7 @@
       "slug": "simulation-meta-economy",
       "name": "Simulation Game Meta Economy",
       "status": "ok",
-      "uptimeSeconds": 0,
+      "uptimeSeconds": 6,
       "records": 3,
       "topAnomaly": {
         "tenant": "simulation-meta-economy",
@@ -62,7 +62,7 @@
       "slug": "flight-hub-latency",
       "name": "Flight Hub Latency Logs",
       "status": "ok",
-      "uptimeSeconds": 0,
+      "uptimeSeconds": 6,
       "records": 3,
       "topAnomaly": {
         "tenant": "flight-hub-latency",
