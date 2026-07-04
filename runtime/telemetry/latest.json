@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-04T22:58:16.481Z",
+  "generatedAt": "2026-07-04T23:05:15.680Z",
   "uptimeSeconds": 0,
   "lastRun": {
     "status": "ok",
-    "completedAt": "2026-07-04T22:58:16.481Z",
-    "durationMs": 64,
+    "completedAt": "2026-07-04T23:05:15.680Z",
+    "durationMs": 242,
     "tenants": [
       "asset-spot-prices",
       "simulation-meta-economy",
