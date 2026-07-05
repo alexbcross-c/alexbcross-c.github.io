@@ -6,33 +6,29 @@
   <title>Flight Hub Latency Logs</title>
   <meta name="description" content="Airport hub delay, latency, and operations anomaly logs">
   <link rel="canonical" href="https://kidasitehub.com/flight-hub-latency/">
+  <link rel="alternate" type="application/rss+xml" title="Kida Site Hub Data Updates" href="https://kidasitehub.com/rss.xml">
   <meta property="og:title" content="Flight Hub Latency Logs">
   <meta property="og:description" content="Airport hub delay, latency, and operations anomaly logs">
   <meta property="og:url" content="https://kidasitehub.com/flight-hub-latency/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Flight Hub Latency Logs","description":"Flight hub delays are not just departure-board trivia. They affect missed connections, crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.","url":"https://kidasitehub.com/flight-hub-latency/","datePublished":"2026-07-05T01:20:37.313Z","dateModified":"2026-07-05T01:20:37.313Z","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"Kida Site Hub","url":"https://kidasitehub.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kidasitehub.com/flight-hub-latency/"}}</script>
+  <meta property="og:image" content="https://kidasitehub.com/flight-hub-latency/media/daily-anomaly.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flight Hub Latency Logs">
+  <meta name="twitter:description" content="Airport hub delay, latency, and operations anomaly logs">
+  <meta name="twitter:image" content="https://kidasitehub.com/flight-hub-latency/media/daily-anomaly.svg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Flight Hub Latency Logs","description":"Flight hub delays at major connecting airports — including high-volume U.S. hubs where missed connections are costly — affect crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.","url":"https://kidasitehub.com/flight-hub-latency/","datePublished":"2026-07-05T01:30:59.876Z","dateModified":"2026-07-05T01:30:59.876Z","isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"Kida Site Hub","url":"https://kidasitehub.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://kidasitehub.com/flight-hub-latency/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can this tell me if my flight is cancelled?","acceptedAnswer":{"@type":"Answer","text":"No. It is a hub-level operations tracker. Use your airline for flight-specific status, and use this page to understand broader delay pressure."}},{"@type":"Question","name":"Why does arrival compression matter?","acceptedAnswer":{"@type":"Answer","text":"Bunched arrivals can create gate conflicts, baggage delays, and crew pressure even when the average delay number does not look extreme."}},{"@type":"Question","name":"How should travelers use this?","acceptedAnswer":{"@type":"Answer","text":"Treat it as a planning signal. If hub latency and missed connection risk are both elevated, allow more connection time and watch airline alerts closely."}}],"url":"https://kidasitehub.com/flight-hub-latency/"}</script>
   <meta name="google-adsense-account" content="ca-pub-8163395527264607">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8163395527264607" crossorigin="anonymous"></script>
-  <script>
-    window.pbjs = window.pbjs || {};
-    window.pbjs.que = window.pbjs.que || [];
-    window.googletag = window.googletag || { cmd: [] };
-    window.__AD_CONFIRMATIONS__ = {"prebid":"pending:PREBID_CONFIRMATION_CODE","google-ad-manager":"pending:GAM_CONFIRMATION_CODE"};
-    window.__HEADER_BIDDING_UNITS__ = [{"code":"ad-slot-top-leaderboard","mediaTypes":{"banner":{"sizes":[[970,250],[728,90]]}},"bids":[]},{"code":"ad-slot-sticky-rail","mediaTypes":{"banner":{"sizes":[[300,600],[300,250]]}},"bids":[]},{"code":"ad-slot-inline-market-card","mediaTypes":{"banner":{"sizes":[[336,280],[300,250]]}},"bids":[]}];
-    window.pbjs.que.push(function configureTenantBidding() {
-      window.pbjs.addAdUnits && window.pbjs.addAdUnits(window.__HEADER_BIDDING_UNITS__);
-      window.pbjs.requestBids && window.pbjs.requestBids({ timeout: 1100 });
-    });
-  </script>
-  <script async data-header-bidding="hb-flight-hub-latency" src="/vendor/prebid.min.js"></script>
+  
   <style>
     :root { color-scheme: light; font-family: Inter, Arial, sans-serif; background: #f6f8f4; color: #17202a; }
     body { margin: 0; min-height: 100vh; }
     header { padding: 28px clamp(18px, 4vw, 52px); background: #1f3d3a; color: white; }
     h1 { margin: 0 0 12px; font-size: clamp(2rem, 5vw, 4.8rem); line-height: 0.96; letter-spacing: 0; }
     p { line-height: 1.55; }
-    main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 340px); gap: 24px; padding: 24px clamp(18px, 4vw, 52px) 64px; }
-    .ad-frame { min-height: 96px; border: 1px dashed #8a988f; background: #fff; display: grid; place-items: center; color: #52635c; font-size: 0.88rem; }
-    .ad-rail { position: sticky; top: 16px; min-height: 600px; }
+    main { max-width: 980px; margin: 0 auto; padding: 24px clamp(18px, 4vw, 52px) 64px; }
+    .ad-unit { margin: 28px 0; min-height: 90px; }
     .summary { display: grid; gap: 20px; }
     .infographic { width: 100%; border: 1px solid #cad4cd; background: white; }
     .metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
@@ -47,11 +43,8 @@
     .analysis-section li { margin: 8px 0; line-height: 1.5; }
     .site-nav { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 20px; }
     .site-nav a { color: inherit; font-weight: 700; }
-    .admin-link { color: #d7e6dd; }
     @media (max-width: 840px) {
-      header, main { grid-template-columns: 1fr; }
       .metric-grid { grid-template-columns: 1fr; }
-      .ad-rail { position: static; min-height: 250px; }
     }
   </style>
 </head>
@@ -60,14 +53,14 @@
     <section>
       <h1>Flight Hub Latency Logs</h1>
       <p>Airport hub delay, latency, and operations anomaly logs</p>
-      <p>Latest movement: <strong>Hub Latency +0.00%</strong></p>
+      <p>Latest movement: <strong>Hub Latency -1.35%</strong></p>
       <nav class="site-nav" aria-label="Site">
         <a href="/">Hub</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
         <a href="/privacy/">Privacy</a>
         <a href="/editorial-policy/">Editorial policy</a>
-        <a class="admin-link" href="/admin-control-center">Admin telemetry</a>
+        <a href="/terms/">Terms</a>
       </nav>
     </section>
   </header>
@@ -76,46 +69,50 @@
       <img class="infographic" src="media/daily-anomaly.svg" alt="Flight Hub Latency Logs daily anomaly infographic">
       <div class="metric-grid"><article class="metric-card">
         <span>Hub Latency</span>
-        <strong>48 min</strong>
-        <em>+0.00%</em>
+        <strong>47.35 min</strong>
+        <em>-1.35%</em>
       </article>
 <article class="metric-card">
         <span>Missed Connection Risk</span>
-        <strong>9.1 %</strong>
-        <em>+0.00%</em>
+        <strong>9.18 %</strong>
+        <em>+0.88%</em>
       </article>
 <article class="metric-card">
         <span>Arrival Compression</span>
-        <strong>64 score</strong>
-        <em>+0.00%</em>
+        <strong>63.16 score</strong>
+        <em>-1.31%</em>
       </article></div>
       <article class="analysis-section">
         <h2>Current read</h2>
-        <p>Flight hub delays are not just departure-board trivia. They affect missed connections, crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.</p>
-        <p>The latest update was built at 2026-07-05T01:20:37.313Z. The current metric set is Hub Latency: 48 min; Missed Connection Risk: 9.1 %; Arrival Compression: 64 score. Hub Latency is the lead movement at +0.00% from the previous reading. This page is designed as a daily reference for readers who want the context behind the numbers, not just a thin quote table.</p>
+        <p>Flight hub delays at major connecting airports — including high-volume U.S. hubs where missed connections are costly — affect crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.</p>
+        <p>The latest update was built at 2026-07-05T01:30:59.876Z. The current metric set is Hub Latency: 47.35 min; Missed Connection Risk: 9.18 %; Arrival Compression: 63.16 score. Hub Latency is the lead movement at -1.35% from the previous reading. This page is designed as a daily reference for readers who want the context behind the numbers, not just a thin quote table.</p>
         <h2>How to read this tracker</h2>
-        <p>Start with hub latency minutes, then look at missed connection risk and arrival compression. Latency shows the delay load. Missed connection risk shows passenger impact. Arrival compression shows whether flights are bunching into a tighter operating window, which can stress gates and crews even when average delays look manageable.</p>
+        <p>Start with hub latency minutes, then look at missed connection risk and arrival compression. Latency shows the delay load across the hub. Missed connection risk shows passenger impact for tight itineraries. Arrival compression shows whether flights are bunching into a tighter operating window, which can stress gates and crews even when average delays look manageable.</p>
         <ul><li><strong>Hub Latency:</strong> The core delay pressure reading for the hub. It summarizes how much schedule friction is present in the current snapshot.</li>
 <li><strong>Missed Connection Risk:</strong> A passenger-impact signal that rises when delay patterns make tight connections less reliable.</li>
 <li><strong>Arrival Compression:</strong> A congestion signal that rises when arrivals are clustered into a narrower time window.</li></ul>
         <h2>Editorial method</h2>
-        <p>Each update compares the current operational snapshot with the previous stored snapshot and highlights the strongest movement. The article text explains what the combination of metrics may mean in the real world: schedule recovery, congestion, or compounding disruption.</p>
+        <p>Each update compares the current operational snapshot with the previous stored snapshot and highlights the strongest movement. The article text explains what the combination of metrics may mean in the real world: schedule recovery, bank compression, or compounding disruption during weather or ATC programs.</p>
         <p>Airport operations change quickly because weather, air traffic control programs, maintenance, and crew legality can move faster than a public dashboard. Travelers should always confirm directly with their airline and airport before making decisions.</p>
+        <h2>Data source</h2>
+        <p>When live API credentials are configured, values come from the publisher feed referenced by FLIGHT_LATENCY_API_URL. In the current public build, values are generated from a controlled synthetic fixture that drifts slightly on each six-hour refresh to show how hub stress is summarized without claiming a live FAA feed.</p>
         <h2>Frequently asked questions</h2>
         <h3>Can this tell me if my flight is cancelled?</h3><p>No. It is a hub-level operations tracker. Use your airline for flight-specific status, and use this page to understand broader delay pressure.</p>
 <h3>Why does arrival compression matter?</h3><p>Bunched arrivals can create gate conflicts, baggage delays, and crew pressure even when the average delay number does not look extreme.</p>
 <h3>How should travelers use this?</h3><p>Treat it as a planning signal. If hub latency and missed connection risk are both elevated, allow more connection time and watch airline alerts closely.</p>
       </article>
-      <aside id="ad-slot-top-leaderboard" class="ad-frame" data-ad-unit="top-leaderboard">Top leaderboard bid frame</aside>
-      <aside id="ad-slot-inline-market-card" class="ad-frame" data-ad-unit="inline-market-card">Inline contextual bid frame</aside>
+      <div class="ad-unit">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8163395527264607"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     </section>
-    <aside id="ad-slot-sticky-rail" class="ad-frame ad-rail" data-ad-unit="sticky-rail">Sticky rail bid frame</aside>
   </main>
   <script>
-    window.__SITE_TELEMETRY__ = {"tenant":"flight-hub-latency","builtAt":"2026-07-05T01:20:37.313Z"};
-    if (navigator.sendBeacon) {
-      navigator.sendBeacon('/.netlify/functions/traffic-log', JSON.stringify({ tenant: 'flight-hub-latency', path: location.pathname, at: new Date().toISOString() }));
-    }
+    window.__SITE_TELEMETRY__ = {"tenant":"flight-hub-latency","builtAt":"2026-07-05T01:30:59.876Z"};
   </script>
 </body>
 </html>

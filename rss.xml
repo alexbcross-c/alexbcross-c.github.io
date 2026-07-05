@@ -4,27 +4,27 @@
     <title>Kida Site Hub Data Updates</title>
     <link>https://kidasitehub.com/</link>
     <description>Latest generated data explainers from Kida Site Hub.</description>
-    <lastBuildDate>Sun, 05 Jul 2026 01:20:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 01:30:59 GMT</lastBuildDate>
     <item>
       <title>Specialized Asset Spot Prices</title>
       <link>https://kidasitehub.com/asset-spot-prices/</link>
       <guid>https://kidasitehub.com/asset-spot-prices/</guid>
-      <pubDate>Sun, 05 Jul 2026 01:20:37 GMT</pubDate>
-      <description>Specialized asset markets are often thin, fragmented, and slow to explain themselves. This tracker turns a small set of repeatable signals into a readable market note so collectors, operators, and analysts can understand whether price movement is being driven by liquidity, inventory, or broad demand pressure.</description>
+      <pubDate>Sun, 05 Jul 2026 01:30:59 GMT</pubDate>
+      <description>Specialized asset markets — collectibles, vintage instruments, graded memorabilia, and other thinly traded alternatives — are often fragmented and slow to explain themselves. This tracker turns a small set of repeatable signals into a readable market note so collectors, dealers, and analysts can understand whether price movement is being driven by liquidity, inventory, or broad demand pressure.</description>
     </item>
 <item>
       <title>Simulation Game Meta Economy</title>
       <link>https://kidasitehub.com/simulation-meta-economy/</link>
       <guid>https://kidasitehub.com/simulation-meta-economy/</guid>
-      <pubDate>Sun, 05 Jul 2026 01:20:37 GMT</pubDate>
-      <description>Simulation game economies can shift quickly when player behavior, crafting costs, event rewards, or rare item demand change at the same time. This tracker explains the health of a game economy in practical terms for players, community builders, and creators who follow market balance.</description>
+      <pubDate>Sun, 05 Jul 2026 01:30:59 GMT</pubDate>
+      <description>Simulation game economies — from long-running MMO crafting loops to seasonal extraction titles — can shift quickly when player behavior, event rewards, or rare item demand change at the same time. This tracker explains the health of a game economy in practical terms for players, guild leaders, and creators who follow market balance.</description>
     </item>
 <item>
       <title>Flight Hub Latency Logs</title>
       <link>https://kidasitehub.com/flight-hub-latency/</link>
       <guid>https://kidasitehub.com/flight-hub-latency/</guid>
-      <pubDate>Sun, 05 Jul 2026 01:20:37 GMT</pubDate>
-      <description>Flight hub delays are not just departure-board trivia. They affect missed connections, crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.</description>
+      <pubDate>Sun, 05 Jul 2026 01:30:59 GMT</pubDate>
+      <description>Flight hub delays at major connecting airports — including high-volume U.S. hubs where missed connections are costly — affect crew timing, gate congestion, baggage flow, and traveler decisions. This tracker turns hub latency signals into a readable operations note for travelers and aviation watchers.</description>
     </item>
   </channel>
 </rss>

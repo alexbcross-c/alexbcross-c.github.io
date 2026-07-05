@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /admin-control-center/
 Sitemap: https://kidasitehub.com/sitemap.xml

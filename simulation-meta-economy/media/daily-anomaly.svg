@@ -3,29 +3,29 @@
   <rect x="0" y="0" width="1200" height="156" fill="#1f3d3a"/>
   <rect x="0" y="156" width="1200" height="564" fill="#eef3ee"/>
   <text x="72" y="76" font-size="34" font-weight="700" font-family="Inter, Arial, sans-serif" fill="#ffffff">Simulation Game Meta Economy</text>
-  <text x="72" y="119" font-size="22" font-family="Inter, Arial, sans-serif" fill="#d7e6dd">Daily anomaly export - 2026-07-05T01:20:37.313Z</text>
+  <text x="72" y="119" font-size="22" font-family="Inter, Arial, sans-serif" fill="#d7e6dd">Daily anomaly export - 2026-07-05T01:30:59.876Z</text>
   <g transform="translate(72 214)">
     <rect width="1056" height="112" rx="10" fill="#28766f"/>
     <text x="34" y="46" font-size="23" font-family="Inter, Arial, sans-serif" fill="#fff7ed">Largest movement</text>
-    <text x="34" y="88" font-size="38" font-weight="700" font-family="Inter, Arial, sans-serif" fill="#ffffff">Currency Velocity +0.00%</text>
+    <text x="34" y="88" font-size="38" font-weight="700" font-family="Inter, Arial, sans-serif" fill="#ffffff">Currency Velocity +2.05%</text>
   </g>
   
         <g transform="translate(72 365)">
           <rect width="1056" height="64" rx="8" fill="#ffffff" opacity="0.94"/>
           <text x="26" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a">Currency Velocity</text>
-          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">3.42 turns</text>
-          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">+0.00%</text>
+          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">3.49 turns</text>
+          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">+2.05%</text>
         </g>
         <g transform="translate(72 451)">
           <rect width="1056" height="64" rx="8" fill="#ffffff" opacity="0.94"/>
           <text x="26" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a">Rare Item Index</text>
-          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">901 idx</text>
-          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">+0.00%</text>
+          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">913.6 idx</text>
+          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">+1.40%</text>
         </g>
         <g transform="translate(72 537)">
           <rect width="1056" height="64" rx="8" fill="#ffffff" opacity="0.94"/>
           <text x="26" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a">Crafting Margin</text>
-          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">18.9 %</text>
-          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">+0.00%</text>
+          <text x="640" y="40" font-size="28" font-family="Inter, Arial, sans-serif" fill="#17202a" text-anchor="end">18.59 %</text>
+          <text x="1018" y="40" font-size="26" font-family="Inter, Arial, sans-serif" fill="#28766f" text-anchor="end">-1.64%</text>
         </g>
 </svg>
